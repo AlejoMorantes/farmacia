@@ -34,9 +34,11 @@ df_f = df.copy()
 
 if filtro_vencimiento:
     df_f = df_f[df_f['dias_vencimiento'] < 90]
+    df=df_f[df_f['dias_vencimiento'] < 90]
 
 if filtro_stock:
     df_f = df_f[df_f['stock_disponible'] < 50]
+    df=df_f[df_f['stock_disponible'] < 50]
                                     
 
 # ⑤ Título
